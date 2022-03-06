@@ -1,0 +1,146 @@
+html,
+body {
+  background-color: #FFF;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+/* HEADER */
+header .banner-container {
+  height: 900px;
+}
+header .banner-container .wrapper {
+  color: #FFF;
+  background-image: url(../img/image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  padding: 10px;
+}
+header .banner-container .wrapper .text-top {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: end;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  margin: 10px 0;
+  padding: 10px;
+}
+header .banner-container .wrapper .save-date {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: start;
+  margin: 10px 0;
+  padding: 10px;
+}
+header .banner-container .wrapper .save-date img {
+  width: 400px;
+}
+header .banner-container .wrapper .bottom-text {
+  font-family: 'Dosis', sans-serif;
+  display: grid;
+  grid-template-columns: 400px auto auto;
+  margin: 10px 0;
+  padding: 10px;
+  gap: 5px;
+}
+header .banner-container .wrapper .bottom-text .date {
+  font-size: 28px;
+  align-self: center;
+  text-align: center;
+}
+header .banner-container .wrapper .bottom-text .invitation {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+}
+header .banner-container .wrapper .bottom-text .invitation p {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+header .banner-container .wrapper .bottom-text .invitation p:nth-child(1) {
+  font-size: 18px;
+}
+header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+}
+header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #181818;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+header .banner-container .wrapper .bottom-text .invitation .invitation-btn button:hover {
+  background-color: #71717A;
+}
+header .banner-container .wrapper .bottom-text .invitation .invitation-btn button i {
+  padding-right: 5px;
+}
+/* MAIN */
+#panel {
+  display: none;
+  padding: 10px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 240px) and (max-device-width: 667px) {
+  /* HEADER */
+  header .banner-container {
+    height: auto;
+  }
+  header .banner-container .wrapper {
+    height: auto;
+    background-image: url(../img/portrait.webp);
+    background-size: cover;
+  }
+  header .banner-container .wrapper .text-top {
+    justify-content: center;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  header .banner-container .wrapper .text-top h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  header .banner-container .wrapper .save-date {
+    justify-content: center;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  header .banner-container .wrapper .save-date img {
+    width: 150px;
+  }
+  header .banner-container .wrapper .bottom-text {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5px 0;
+    padding: 5px;
+  }
+  header .banner-container .wrapper .bottom-text .date {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .bottom-text .date p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  header .banner-container .wrapper .bottom-text .invitation p {
+    font-size: 14px;
+    margin: 0;
+  }
+  header .banner-container .wrapper .bottom-text .invitation p:nth-child(1) {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
+    font-size: 14px;
+  }
+  /* MAIN */
+  #panel {
+    display: none;
+    padding: 10px;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
