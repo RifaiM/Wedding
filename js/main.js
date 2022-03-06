@@ -9,7 +9,7 @@ function myFunction() {
 
 // Get URL
 
-const myUrlWithParams = new URL("http://127.0.0.1:5500/Wedding/?to/");
+const myUrlWithParams = new URL("https://rifaim.github.io/Wedding/?to/");
 
 myUrlWithParams.searchParams.append("Mochammad Rifai", "Partner");
 myUrlWithParams.searchParams.append("Sadam", "Partner");
