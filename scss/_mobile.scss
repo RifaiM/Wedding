@@ -100,13 +100,16 @@ and (orientation : landscape) {
         .banner-container {
 
             .wrapper {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row;
                 background-image: url(../img/image.webp);
 
                 .text-top {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(1, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 
@@ -118,7 +121,7 @@ and (orientation : landscape) {
                 }
                 .save-date {
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(1, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 
@@ -128,7 +131,7 @@ and (orientation : landscape) {
                 }
                 .bottom-text {
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(1, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 

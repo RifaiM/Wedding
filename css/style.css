@@ -163,13 +163,16 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: landscape) {
   /* HEADER */
   header .banner-container .wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-image: url(../img/image.webp);
   }
   header .banner-container .wrapper .text-top {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
@@ -180,7 +183,7 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   }
   header .banner-container .wrapper .save-date {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
@@ -189,7 +192,7 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   }
   header .banner-container .wrapper .bottom-text {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
