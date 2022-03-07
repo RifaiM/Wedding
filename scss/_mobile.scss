@@ -98,14 +98,12 @@ and (orientation : landscape) {
 
     header {
         .banner-container {
-            height: auto;
 
             .wrapper {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 background-image: url(../img/image.webp);
                 background-size: cover;
-                height: auto;
                 
                 .text-top {
                     display: grid;

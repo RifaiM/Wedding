@@ -162,15 +162,11 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: landscape) {
   /* HEADER */
-  header .banner-container {
-    height: auto;
-  }
   header .banner-container .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     background-image: url(../img/image.webp);
     background-size: cover;
-    height: auto;
   }
   header .banner-container .wrapper .text-top {
     display: grid;
