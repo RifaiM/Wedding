@@ -179,7 +179,7 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
     padding: 5px;
   }
   header .banner-container .wrapper .text-top h1 {
-    grid-area: 1/2;
+    grid-area: 1/1;
     margin: 0;
     font-size: 30px;
   }
