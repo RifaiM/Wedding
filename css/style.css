@@ -167,7 +167,6 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
     background-image: url(../img/image.webp);
   }
   header .banner-container .wrapper .text-top {
