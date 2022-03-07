@@ -98,13 +98,16 @@ and (orientation : landscape) {
 
     header {
         .banner-container {
+            
 
             .wrapper {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 background-image: url(../img/image.webp);
+                background-size: cover;
+                
 
                 .text-top {
                     display: grid;
@@ -115,7 +118,7 @@ and (orientation : landscape) {
                     h1 {
                         grid-area: 1 / 2;
                         margin: 0;
-                        font-size: 30px;
+                        font-size: 24px;
                     }
                 }
                 .save-date {

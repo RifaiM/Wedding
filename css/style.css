@@ -166,8 +166,9 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-image: url(../img/image.webp);
+    background-size: cover;
   }
   header .banner-container .wrapper .text-top {
     display: grid;
@@ -178,7 +179,7 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   header .banner-container .wrapper .text-top h1 {
     grid-area: 1/2;
     margin: 0;
-    font-size: 30px;
+    font-size: 24px;
   }
   header .banner-container .wrapper .save-date {
     display: grid;
