@@ -1,0 +1,166 @@
+@use './config';
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 240px)
+and (max-device-width : 667px)
+and (orientation : portrait)  {
+
+    /* HEADER */
+
+    header {
+        .banner-container {
+            height: auto;
+
+            .wrapper {
+                height: auto;
+                background-image: url(../img/portrait.webp);
+                background-size: cover;
+
+                .text-top {
+                    justify-content: center;
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    h1 {
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                }
+                .save-date {
+                    justify-content: center;
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    img {
+                        width: 150px;
+                    }
+                }
+                .bottom-text {
+                    grid-template-columns: repeat(1, 1fr);
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    .date {
+                        font-size: 14px;
+
+                        p {
+                            margin: 0;
+                            padding: 5px 0;
+                        }
+                    }
+                    .invitation {
+
+                        p {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        p:nth-child(1) {
+                            font-size: 14px;
+                        }
+                        p:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* MAIN */
+
+    #panel {
+        display: none;
+        padding: 10px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen
+and (min-device-width : 240px)
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+    /* HEADER */
+
+    header {
+        .banner-container {
+            height: auto;
+
+            .wrapper {
+                height: auto;
+                background-image: url(../img/image.webp);
+                background-size: cover;
+
+                .text-top {
+                    justify-content: center;
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    h1 {
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                }
+                .save-date {
+                    justify-content: center;
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    img {
+                        width: 150px;
+                    }
+                }
+                .bottom-text {
+                    grid-template-columns: repeat(1, 1fr);
+                    margin: 5px 0;
+                    padding: 5px;
+
+                    .date {
+                        font-size: 14px;
+
+                        p {
+                            margin: 0;
+                            padding: 5px 0;
+                        }
+                    }
+                    .invitation {
+
+                        p {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        p:nth-child(1) {
+                            font-size: 14px;
+                        }
+                        p:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* MAIN */
+
+    #panel {
+        display: none;
+        padding: 10px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen
+and (min-device-width : 712px)
+and (max-device-width : 1138px) { 
+
+}
+
+@media only screen
+and (max-width : 668px) { 
+    
+}

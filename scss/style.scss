@@ -1,0 +1,117 @@
+@use './config';
+
+html,
+body {
+    background-color: map-get(config.$color, "background");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    letter-spacing: 1px;
+}
+
+/* HEADER */
+
+header {
+    .banner-container {
+        height: 900px;
+        
+        .wrapper {
+            color: map-get(config.$color, "background");
+            background-image: url(../img/image.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 900px;
+            padding: 10px;
+
+            .text-top {
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+                justify-content: end;
+                font-family: config.$font-primary;
+                font-size: 40px;
+                margin: 10px 0;
+                padding: 10px;
+            }
+            .save-date {
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+                justify-content: start;
+                margin: 10px 0;
+                padding: 10px;
+
+                img {
+                    width: 400px;
+                }
+            }
+            .bottom-text {
+                display: grid;
+                grid-template-columns: 400px auto auto;
+                font-family: config.$font-secondary;
+                margin: 10px 0;
+                padding: 10px;
+                gap: 5px;
+
+                .date {
+                    font-size: 28px;
+                    align-self: center;
+                    text-align: center;
+                }
+                .invitation {
+                    justify-self: center;
+                    align-self: center;
+                    text-align: center;
+                    padding: 5px;
+
+                    p {
+                        margin: 5px 0;
+                        padding: 5px 0;
+                    }
+
+                    p:nth-child(1) {
+                        font-size: 18px;
+                    }
+                    p:nth-child(2) {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    .invitation-btn {
+
+                        button {
+                            padding: 10px 20px;
+                            color: map-get(config.$color, "background");
+                            background-color: map-get(config.$color, "primary");
+                            font-family: config.$font-secondary;
+                            border: none;
+                            border-radius: 5px;
+                            display: inline-flex;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: map-get(config.$color, "background");
+                            }
+                            i {
+                                padding-right: 5px;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MAIN */
+
+#panel {
+    display: none;
+    padding: 10px;
+    font-family: config.$font-secondary;
+}
+
+@import './mobile';
