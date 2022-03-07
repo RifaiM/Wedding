@@ -11,39 +11,40 @@ body {
 }
 
 /* HEADER */
-header .banner-container {
-  height: 900px;
-}
 header .banner-container .wrapper {
   color: #fff;
   background-image: url(../img/image.webp);
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 900px;
+  background-size: 100% 100vh;
   padding: 10px;
+  height: 100vh;
 }
 header .banner-container .wrapper .text-top {
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  justify-content: end;
+  grid-template-columns: repeat(2, 1fr);
   font-family: "Great Vibes", cursive;
-  font-size: 40px;
   margin: 10px 0;
   padding: 10px;
 }
+header .banner-container .wrapper .text-top h1 {
+  font-size: 40px;
+  grid-area: 1/2;
+  justify-self: center;
+  margin: 0;
+}
 header .banner-container .wrapper .save-date {
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  justify-content: start;
+  grid-template-columns: repeat(3, 1fr);
   margin: 10px 0;
   padding: 10px;
 }
 header .banner-container .wrapper .save-date img {
-  width: 400px;
+  width: 300px;
+  justify-self: center;
 }
 header .banner-container .wrapper .bottom-text {
   display: grid;
-  grid-template-columns: 400px auto auto;
+  grid-template-columns: repeat(3, 1fr);
   font-family: "Dosis", sans-serif;
   margin: 10px 0;
   padding: 10px;
@@ -83,7 +84,7 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   cursor: pointer;
 }
 header .banner-container .wrapper .bottom-text .invitation .invitation-btn button:hover {
-  background-color: #fff;
+  background-color: #71717A;
 }
 header .banner-container .wrapper .bottom-text .invitation .invitation-btn button i {
   padding-right: 5px;
@@ -96,33 +97,35 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   font-family: "Dosis", sans-serif;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: portrait) {
   /* HEADER */
-  header .banner-container {
-    height: auto;
-  }
   header .banner-container .wrapper {
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url(../img/portrait.webp);
-    background-size: cover;
   }
   header .banner-container .wrapper .text-top {
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     margin: 5px 0;
     padding: 5px;
   }
   header .banner-container .wrapper .text-top h1 {
-    font-size: 30px;
+    grid-area: 1/1;
     margin: 0;
+    font-size: 30px;
   }
   header .banner-container .wrapper .save-date {
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     margin: 5px 0;
     padding: 5px;
   }
   header .banner-container .wrapper .save-date img {
-    width: 150px;
+    width: 250px;
   }
   header .banner-container .wrapper .bottom-text {
     grid-template-columns: repeat(1, 1fr);
@@ -145,6 +148,9 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   }
   header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
     font-size: 14px;
+  }
+  header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
+    padding: 5px 10px;
   }
 
   /* MAIN */
@@ -156,25 +162,25 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: landscape) {
   /* HEADER */
-  header .banner-container {
-    height: auto;
-  }
   header .banner-container .wrapper {
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     background-image: url(../img/image.webp);
-    background-size: cover;
   }
   header .banner-container .wrapper .text-top {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
   header .banner-container .wrapper .text-top h1 {
-    font-size: 30px;
+    grid-area: 1/2;
     margin: 0;
+    font-size: 30px;
   }
   header .banner-container .wrapper .save-date {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
@@ -182,7 +188,8 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
     width: 150px;
   }
   header .banner-container .wrapper .bottom-text {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 5px 0;
     padding: 5px;
   }
@@ -202,6 +209,9 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
   }
   header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
     font-size: 14px;
+  }
+  header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
+    padding: 5px 10px;
   }
 
   /* MAIN */

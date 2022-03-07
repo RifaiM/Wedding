@@ -1,6 +1,6 @@
 @use './config';
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait) ----------- */
 
 @media only screen
 and (min-device-width : 240px)
@@ -11,30 +11,34 @@ and (orientation : portrait)  {
 
     header {
         .banner-container {
-            height: auto;
 
             .wrapper {
-                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
                 background-image: url(../img/portrait.webp);
-                background-size: cover;
 
                 .text-top {
+                    grid-template-columns: repeat(1, 1fr);
                     justify-content: center;
                     margin: 5px 0;
                     padding: 5px;
 
                     h1 {
-                        font-size: 30px;
+                        grid-area: 1 / 1;
                         margin: 0;
+                        font-size: 30px;
                     }
                 }
                 .save-date {
+                    grid-template-columns: repeat(1, 1fr);
                     justify-content: center;
                     margin: 5px 0;
                     padding: 5px;
 
                     img {
-                        width: 150px;
+                        width: 250px;
                     }
                 }
                 .bottom-text {
@@ -61,6 +65,13 @@ and (orientation : portrait)  {
                         }
                         p:nth-child(2) {
                             font-size: 14px;
+                        }
+
+                        .invitation-btn {
+
+                            button {
+                                padding: 5px 10px;
+                            }
                         }
                     }
                 }
@@ -87,25 +98,27 @@ and (orientation : landscape) {
 
     header {
         .banner-container {
-            height: auto;
 
             .wrapper {
-                height: auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
                 background-image: url(../img/image.webp);
-                background-size: cover;
 
                 .text-top {
-                    justify-content: center;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 
                     h1 {
-                        font-size: 30px;
+                        grid-area: 1 / 2;
                         margin: 0;
+                        font-size: 30px;
                     }
                 }
                 .save-date {
-                    justify-content: center;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 
@@ -114,7 +127,8 @@ and (orientation : landscape) {
                     }
                 }
                 .bottom-text {
-                    grid-template-columns: repeat(1, 1fr);
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
                     margin: 5px 0;
                     padding: 5px;
 
@@ -137,6 +151,13 @@ and (orientation : landscape) {
                         }
                         p:nth-child(2) {
                             font-size: 14px;
+                        }
+
+                        .invitation-btn {
+
+                            button {
+                                padding: 5px 10px;
+                            }
                         }
                     }
                 }

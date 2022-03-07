@@ -16,39 +16,44 @@ body {
 
 header {
     .banner-container {
-        height: 900px;
         
         .wrapper {
             color: map-get(config.$color, "background");
             background-image: url(../img/image.webp);
-            background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            background-size: 100% 100vh;
             padding: 10px;
+            height: 100vh;
 
             .text-top {
                 display: grid;
-                grid-template-rows: repeat(1, 1fr);
-                justify-content: end;
+                grid-template-columns: repeat(2, 1fr);
                 font-family: config.$font-primary;
-                font-size: 40px;
                 margin: 10px 0;
                 padding: 10px;
+
+                h1 {
+                    font-size: 40px;
+                    grid-area: 1 / 2;
+                    justify-self: center;
+                    margin: 0;
+                }
+
             }
             .save-date {
                 display: grid;
-                grid-template-rows: repeat(1, 1fr);
-                justify-content: start;
+                grid-template-columns: repeat(3, 1fr);
                 margin: 10px 0;
                 padding: 10px;
 
                 img {
-                    width: 400px;
+                    width: 300px;
+                    justify-self: center;
                 }
             }
             .bottom-text {
                 display: grid;
-                grid-template-columns: 400px auto auto;
+                grid-template-columns: repeat(3, 1fr);
                 font-family: config.$font-secondary;
                 margin: 10px 0;
                 padding: 10px;
@@ -68,15 +73,16 @@ header {
                     p {
                         margin: 5px 0;
                         padding: 5px 0;
+
+                        &:nth-child(1) {
+                            font-size: 18px;
+                        }
+                        &:nth-child(2) {
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
                     }
 
-                    p:nth-child(1) {
-                        font-size: 18px;
-                    }
-                    p:nth-child(2) {
-                        font-size: 24px;
-                        font-weight: bold;
-                    }
                     .invitation-btn {
 
                         button {
@@ -91,7 +97,7 @@ header {
                             cursor: pointer;
 
                             &:hover {
-                                background-color: map-get(config.$color, "background");
+                                background-color: map-get(config.$color, "secondary");
                             }
                             i {
                                 padding-right: 5px;
