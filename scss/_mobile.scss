@@ -13,68 +13,50 @@ and (orientation : portrait)  {
         .banner-container {
 
             .wrapper {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
                 background-image: url(../img/portrait.webp);
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
 
                 .text-top {
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: center;
-                    margin: 5px 0;
-                    padding: 5px;
+                    grid-area: 1 / 1;
 
                     h1 {
-                        grid-area: 1 / 1;
-                        margin: 0;
                         font-size: 30px;
                     }
                 }
                 .save-date {
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: center;
-                    margin: 5px 0;
-                    padding: 5px;
+                    grid-area: 2 / 1;
 
                     img {
-                        width: 250px;
+                        width: 200px;
+                    }
+                    p {
+                        font-size: 14px;
                     }
                 }
-                .bottom-text {
-                    grid-template-columns: repeat(1, 1fr);
-                    margin: 5px 0;
-                    padding: 5px;
+                
+                .invitation {
+                    grid-area: 3 / 1;
 
-                    .date {
+                    p {
                         font-size: 14px;
 
-                        p {
-                            margin: 0;
-                            padding: 5px 0;
+                        &:nth-child(1) {
+                            font-size: 14px;
+                        }
+                        &:nth-child(2) {
+                            font-size: 14px;
                         }
                     }
-                    .invitation {
 
-                        p {
-                            font-size: 14px;
-                            margin: 0;
-                        }
-                        p:nth-child(1) {
-                            font-size: 14px;
-                        }
-                        p:nth-child(2) {
-                            font-size: 14px;
-                        }
+                    .invitation-btn {
 
-                        .invitation-btn {
-
-                            button {
-                                padding: 5px 10px;
-                            }
+                        button {
+                            padding: 5px;
                         }
                     }
                 }
+                
             }
         }
     }
@@ -86,6 +68,7 @@ and (orientation : portrait)  {
         padding: 10px;
     }
 }
+
 
 /* Smartphones (landscape) ----------- */
 
@@ -100,68 +83,50 @@ and (orientation : landscape) {
         .banner-container {
 
             .wrapper {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
                 background-image: url(../img/image.webp);
-                background-size: cover;
-                
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+
                 .text-top {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    margin: 5px 0;
-                    padding: 5px;
+                    grid-area: 1 / 1;
 
                     h1 {
-                        grid-area: 1 / 1;
-                        margin: 0;
                         font-size: 30px;
                     }
                 }
                 .save-date {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    margin: 5px 0;
-                    padding: 5px;
+                    grid-area: 2 / 1;
 
                     img {
-                        width: 150px;
+                        display: none;
+                    }
+                    p {
+                        font-size: 14px;
                     }
                 }
-                .bottom-text {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    margin: 5px 0;
-                    padding: 5px;
+                
+                .invitation {
+                    grid-area: 3 / 1;
 
-                    .date {
+                    p {
                         font-size: 14px;
 
-                        p {
-                            margin: 0;
-                            padding: 5px 0;
+                        &:nth-child(1) {
+                            font-size: 14px;
+                        }
+                        &:nth-child(2) {
+                            font-size: 14px;
                         }
                     }
-                    .invitation {
 
-                        p {
-                            font-size: 14px;
-                            margin: 0;
-                        }
-                        p:nth-child(1) {
-                            font-size: 14px;
-                        }
-                        p:nth-child(2) {
-                            font-size: 14px;
-                        }
+                    .invitation-btn {
 
-                        .invitation-btn {
-
-                            button {
-                                padding: 5px 10px;
-                            }
+                        button {
+                            padding: 5px;
                         }
                     }
                 }
+                
             }
         }
     }

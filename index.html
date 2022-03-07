@@ -33,34 +33,30 @@
                 </div>
                 <div class="save-date">
                     <img src="./img/save-the-date.webp" alt="">
+                    <p>Sunday - 06 August 2021</p>
                 </div>
-                <div class="bottom-text">
-                    <div class="date">
-                        <p>Sunday - 06 August 2021</p>
-                    </div>
-                    <div class="invitation">
-                        <p>Dear :</p>
-                        <p id="myLog"></p>
-                        <div class="invitation-btn">
-                            <button onclick="myFunction()" type="button"><i class="material-icons">
-                                mail
-                            </i>Open Invitation</button>
-                        </div>
-
-                        <script>
-                            var url = window.location.href;
-                            var parts = url.split('/');
-                            var text = parts[5];
-                        
-                            console.log(parts[5]);
-                        
-                            var p = document.getElementById("myLog").innerHTML = text.replace(/[^a-zA-Z&]/g, ' ');
-                            
-                        
-                        </script>
+                <div class="invitation">
+                    <p>Dear :</p>
+                    <p id="myLog"></p>
+                    <div class="invitation-btn">
+                        <button onclick="myFunction()" type="button"><i class="material-icons">
+                            mail
+                        </i>Open Invitation</button>
                     </div>
 
+                    <script>
+                        var url = window.location.href;
+                        var parts = url.split('/');
+                        var text = parts[5];
+                    
+                        console.log(parts[5]);
+                    
+                        var p = document.getElementById("myLog").innerHTML = text.replace(/[^a-zA-Z&]/g, ' ');
+                        
+                    
+                    </script>
                 </div>
+
             </div>
         </div>
     </header>

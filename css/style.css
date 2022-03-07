@@ -16,78 +16,85 @@ header .banner-container .wrapper {
   background-image: url(../img/image.webp);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  padding: 10px;
+  padding: 5px;
   height: 100vh;
-}
-header .banner-container .wrapper .text-top {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-family: "Great Vibes", cursive;
-  margin: 10px 0;
-  padding: 10px;
-}
-header .banner-container .wrapper .text-top h1 {
-  font-size: 40px;
-  grid-area: 1/2;
-  justify-self: center;
-  margin: 0;
-}
-header .banner-container .wrapper .save-date {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 10px 0;
-  padding: 10px;
+  grid-template-rows: repeat(3, 1fr);
+}
+header .banner-container .wrapper .text-top {
+  grid-area: 1/3;
+  justify-self: center;
+  align-self: center;
+  margin: 5px;
+  padding: 5px;
+}
+header .banner-container .wrapper .text-top h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
+  margin: 5px;
+  padding: 5px;
+}
+header .banner-container .wrapper .save-date {
+  grid-area: 2/1;
+  justify-self: center;
+  align-self: center;
+  margin: 5px;
+  padding: 5px;
 }
 header .banner-container .wrapper .save-date img {
   width: 300px;
-  justify-self: center;
-}
-header .banner-container .wrapper .bottom-text {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  font-family: "Dosis", sans-serif;
-  margin: 10px 0;
-  padding: 10px;
-  gap: 5px;
-}
-header .banner-container .wrapper .bottom-text .date {
-  font-size: 28px;
-  align-self: center;
-  text-align: center;
-}
-header .banner-container .wrapper .bottom-text .invitation {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
+  margin: 5px;
   padding: 5px;
 }
-header .banner-container .wrapper .bottom-text .invitation p {
-  margin: 5px 0;
-  padding: 5px 0;
+header .banner-container .wrapper .save-date p {
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
 }
-header .banner-container .wrapper .bottom-text .invitation p:nth-child(1) {
-  font-size: 18px;
+header .banner-container .wrapper .invitation {
+  grid-area: 3/2;
+  padding: 5px;
+  margin: 5px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
 }
-header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
+header .banner-container .wrapper .invitation p {
+  font-family: "Dosis", sans-serif;
+  margin: 5px;
+  padding: 5px;
+}
+header .banner-container .wrapper .invitation p:nth-child(1) {
+  font-size: 20px;
+}
+header .banner-container .wrapper .invitation p:nth-child(2) {
   font-size: 24px;
   font-weight: bold;
 }
-header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
-  padding: 10px 20px;
+header .banner-container .wrapper .invitation .invitation-btn {
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+}
+header .banner-container .wrapper .invitation .invitation-btn button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
   color: #fff;
   background-color: #181818;
   font-family: "Dosis", sans-serif;
   border: none;
   border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
   cursor: pointer;
 }
-header .banner-container .wrapper .bottom-text .invitation .invitation-btn button:hover {
+header .banner-container .wrapper .invitation .invitation-btn button:hover {
   background-color: #71717A;
 }
-header .banner-container .wrapper .bottom-text .invitation .invitation-btn button i {
-  padding-right: 5px;
+header .banner-container .wrapper .invitation .invitation-btn button i {
+  padding: 0 5px;
 }
 
 /* MAIN */
@@ -101,56 +108,39 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: portrait) {
   /* HEADER */
   header .banner-container .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     background-image: url(../img/portrait.webp);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   header .banner-container .wrapper .text-top {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    margin: 5px 0;
-    padding: 5px;
+    grid-area: 1/1;
   }
   header .banner-container .wrapper .text-top h1 {
-    grid-area: 1/1;
-    margin: 0;
     font-size: 30px;
   }
   header .banner-container .wrapper .save-date {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    margin: 5px 0;
-    padding: 5px;
+    grid-area: 2/1;
   }
   header .banner-container .wrapper .save-date img {
-    width: 250px;
+    width: 200px;
   }
-  header .banner-container .wrapper .bottom-text {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5px 0;
+  header .banner-container .wrapper .save-date p {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation {
+    grid-area: 3/1;
+  }
+  header .banner-container .wrapper .invitation p {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation p:nth-child(1) {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation p:nth-child(2) {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation .invitation-btn button {
     padding: 5px;
-  }
-  header .banner-container .wrapper .bottom-text .date {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .date p {
-    margin: 0;
-    padding: 5px 0;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p {
-    font-size: 14px;
-    margin: 0;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p:nth-child(1) {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
-    padding: 5px 10px;
   }
 
   /* MAIN */
@@ -163,56 +153,39 @@ header .banner-container .wrapper .bottom-text .invitation .invitation-btn butto
 @media only screen and (min-device-width: 240px) and (max-device-width: 667px) and (orientation: landscape) {
   /* HEADER */
   header .banner-container .wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
     background-image: url(../img/image.webp);
-    background-size: cover;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   header .banner-container .wrapper .text-top {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5px 0;
-    padding: 5px;
+    grid-area: 1/1;
   }
   header .banner-container .wrapper .text-top h1 {
-    grid-area: 1/1;
-    margin: 0;
     font-size: 30px;
   }
   header .banner-container .wrapper .save-date {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5px 0;
-    padding: 5px;
+    grid-area: 2/1;
   }
   header .banner-container .wrapper .save-date img {
-    width: 150px;
+    display: none;
   }
-  header .banner-container .wrapper .bottom-text {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5px 0;
+  header .banner-container .wrapper .save-date p {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation {
+    grid-area: 3/1;
+  }
+  header .banner-container .wrapper .invitation p {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation p:nth-child(1) {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation p:nth-child(2) {
+    font-size: 14px;
+  }
+  header .banner-container .wrapper .invitation .invitation-btn button {
     padding: 5px;
-  }
-  header .banner-container .wrapper .bottom-text .date {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .date p {
-    margin: 0;
-    padding: 5px 0;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p {
-    font-size: 14px;
-    margin: 0;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p:nth-child(1) {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .invitation p:nth-child(2) {
-    font-size: 14px;
-  }
-  header .banner-container .wrapper .bottom-text .invitation .invitation-btn button {
-    padding: 5px 10px;
   }
 
   /* MAIN */

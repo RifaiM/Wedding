@@ -15,6 +15,7 @@ body {
 /* HEADER */
 
 header {
+    
     .banner-container {
         
         .wrapper {
@@ -22,92 +23,99 @@ header {
             background-image: url(../img/image.webp);
             background-repeat: no-repeat;
             background-size: 100% 100vh;
-            padding: 10px;
+            padding: 5px;
             height: 100vh;
 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
             .text-top {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                font-family: config.$font-primary;
-                margin: 10px 0;
-                padding: 10px;
+                grid-area: 1 / 3;
+                justify-self: center;
+                align-self: center;
+                margin: 5px;
+                padding: 5px;
 
                 h1 {
-                    font-size: 40px;
-                    grid-area: 1 / 2;
-                    justify-self: center;
-                    margin: 0;
+                    font-family: config.$font-primary;
+                    font-size: 48px;
+                    margin: 5px;
+                    padding: 5px;
                 }
 
             }
             .save-date {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                margin: 10px 0;
-                padding: 10px;
+                grid-area: 2 / 1;
+                justify-self: center;
+                align-self: center;
+                margin: 5px;
+                padding: 5px;
 
                 img {
                     width: 300px;
-                    justify-self: center;
+                    margin: 5px;
+                    padding: 5px;
+                }
+                p {
+                    font-family: config.$font-secondary;
+                    font-size: 24px;
+                    text-align: center;
+                    margin: 5px;
+                    padding: 5px;
                 }
             }
-            .bottom-text {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                font-family: config.$font-secondary;
-                margin: 10px 0;
-                padding: 10px;
-                gap: 5px;
+                
+            .invitation {
+                grid-area: 3 / 2;
+                padding: 5px;
+                margin: 5px;
+                justify-self: center;
+                align-self: center;
+                text-align: center;
 
-                .date {
-                    font-size: 28px;
-                    align-self: center;
-                    text-align: center;
-                }
-                .invitation {
-                    justify-self: center;
-                    align-self: center;
-                    text-align: center;
+                p {
+                    font-family: config.$font-secondary;
+                    margin: 5px;
                     padding: 5px;
 
-                    p {
-                        margin: 5px 0;
-                        padding: 5px 0;
-
-                        &:nth-child(1) {
-                            font-size: 18px;
-                        }
-                        &:nth-child(2) {
-                            font-size: 24px;
-                            font-weight: bold;
-                        }
+                    &:nth-child(1) {
+                        font-size: 20px;
                     }
-
-                    .invitation-btn {
-
-                        button {
-                            padding: 10px 20px;
-                            color: map-get(config.$color, "background");
-                            background-color: map-get(config.$color, "primary");
-                            font-family: config.$font-secondary;
-                            border: none;
-                            border-radius: 5px;
-                            display: inline-flex;
-                            align-items: center;
-                            cursor: pointer;
-
-                            &:hover {
-                                background-color: map-get(config.$color, "secondary");
-                            }
-                            i {
-                                padding-right: 5px;
-                            }
-                        }
-
-
+                    &:nth-child(2) {
+                        font-size: 24px;
+                        font-weight: bold;
                     }
                 }
+
+                .invitation-btn {
+                    padding: 5px;
+                    margin: 5px;
+                    font-size: 14px;
+
+                    button {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 10px;
+                        color: map-get(config.$color, "background");
+                        background-color: map-get(config.$color, "primary");
+                        font-family: config.$font-secondary;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: map-get(config.$color, "secondary");
+                        }
+                        i {
+                            padding: 0 5px;
+                        }
+                    }
+
+
+                }
             }
+            
         }
     }
 }
