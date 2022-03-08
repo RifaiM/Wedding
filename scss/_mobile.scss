@@ -17,7 +17,7 @@ and (orientation : portrait)  {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
+                flex-flow: column wrap;
 
                 .text-top {
                     
@@ -86,21 +86,23 @@ and (orientation : landscape) {
 
             .wrapper {
                 background-image: url(../img/image.webp);
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(1, 1fr);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row wrap;
 
                 .text-top {
-                    grid-area: 1 / 1;
+                    
 
                     h1 {
                         font-size: 30px;
                     }
                 }
                 .save-date {
-                    grid-area: 2 / 1;
+                    
 
                     img {
-                        display: none;
+                        width: 150px;
                     }
                     p {
                         font-size: 14px;
@@ -108,7 +110,7 @@ and (orientation : landscape) {
                 }
                 
                 .invitation {
-                    grid-area: 3 / 1;
+                    
 
                     p {
                         font-size: 14px;
