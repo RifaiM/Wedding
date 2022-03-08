@@ -98,10 +98,123 @@ header .banner-container .wrapper .invitation .invitation-btn button i {
 }
 
 /* MAIN */
-#panel {
+.content-container {
   display: none;
-  padding: 10px;
-  font-family: "Dosis", sans-serif;
+}
+.content-container .wrapper {
+  padding: 5px;
+}
+.content-container .wrapper .text-top {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+}
+.content-container .wrapper .main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
+  margin: 5px;
+  gap: 50px;
+}
+.content-container .wrapper .main-content .groom {
+  justify-self: end;
+  grid-area: 1/1;
+  position: relative;
+}
+.content-container .wrapper .main-content .groom .box {
+  display: grid;
+  align-items: center;
+}
+.content-container .wrapper .main-content .groom .box img {
+  width: 250px;
+  align-items: center;
+}
+.content-container .wrapper .main-content .groom .box .text {
+  position: absolute;
+  background-color: #fff;
+  bottom: -40px;
+  left: 50%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 2px solid #71717A;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+.content-container .wrapper .main-content .groom .box .text p {
+  margin: 5px;
+  padding: 5px;
+  color: #181818;
+}
+.content-container .wrapper .main-content .groom .box .text p:nth-child(1) {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+.content-container .wrapper .main-content .groom .box .text p:nth-child(2), .content-container .wrapper .main-content .groom .box .text p:nth-child(3), .content-container .wrapper .main-content .groom .box .text p:nth-child(4) {
+  color: #71717A;
+  font-size: 14px;
+}
+.content-container .wrapper .main-content .groom-social {
+  justify-self: end;
+  position: relative;
+  right: 70px;
+  margin: 5px;
+  padding: 5px;
+}
+.content-container .wrapper .main-content .groom-social i {
+  padding: 0 5px;
+}
+.content-container .wrapper .main-content .bride {
+  justify-self: start;
+  position: relative;
+  grid-area: 1/2;
+}
+.content-container .wrapper .main-content .bride .box {
+  display: grid;
+  align-items: center;
+}
+.content-container .wrapper .main-content .bride .box img {
+  width: 250px;
+  align-items: center;
+}
+.content-container .wrapper .main-content .bride .box .text {
+  position: absolute;
+  background-color: #fff;
+  bottom: -40px;
+  left: 50%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 2px solid #71717A;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+.content-container .wrapper .main-content .bride .box .text p {
+  margin: 5px;
+  padding: 5px;
+  color: #181818;
+}
+.content-container .wrapper .main-content .bride .box .text p:nth-child(1) {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+.content-container .wrapper .main-content .bride .box .text p:nth-child(2), .content-container .wrapper .main-content .bride .box .text p:nth-child(3), .content-container .wrapper .main-content .bride .box .text p:nth-child(4) {
+  color: #71717A;
+  font-size: 14px;
+}
+.content-container .wrapper .main-content .bride-social {
+  justify-self: start;
+  position: relative;
+  left: 70px;
+  margin: 5px;
+  padding: 5px;
+}
+.content-container .wrapper .main-content .bride-social i {
+  padding: 0 5px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -137,7 +250,7 @@ header .banner-container .wrapper .invitation .invitation-btn button i {
   }
 
   /* MAIN */
-  #panel {
+  #main {
     display: none;
     padding: 10px;
   }
@@ -176,7 +289,7 @@ header .banner-container .wrapper .invitation .invitation-btn button i {
   }
 
   /* MAIN */
-  #panel {
+  #main {
     display: none;
     padding: 10px;
   }

@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+    <!--BOOTSTRAP ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" integrity="sha512-Oy+sz5W86PK0ZIkawrG0iv7XwWhYecM3exvUtMKNJMekGFJtVAhibhRPTpmyTj8+lJCkmWfnpxKgT2OopquBHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.css">
 
     
@@ -62,12 +66,48 @@
     </header>
 
     <main>
-        <div id="panel">
-            <p>This panel contains a div element, which is hidden by default (display: none).</p>
-            <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
-            <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
-            <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
-          </div>
+        <div class="content-container" id="main">
+            <div class="wrapper">
+                <div class="text-top">
+                    <h1>Groom & Bride</h1>
+                </div>
+                <div class="main-content">
+                    <div class="groom">
+                        <div class="box">
+                            <img src="./img/groom.webp" alt="">
+                            <div class="text">
+                                <p>Raymond</p>
+                                <p>Putra pertama dari : </p>
+                                <p>Mr. President</p>
+                                <p>Mrs. President</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="groom-social">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                
+                    <div class="bride">
+                        <div class="box">
+                            <img src="./img/bride.webp" alt="">
+                            <div class="text">
+                                <p>Nathalie</p>
+                                <p>Putri pertama dari : </p>
+                                <p>Mr. President</p>
+                                <p>Mrs. President</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bride-social">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="./js/main.js"></script>
