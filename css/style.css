@@ -283,12 +283,6 @@ main .content-container .wrapper .main-content .bride-social i {
     align-items: center;
     flex-flow: column wrap;
   }
-  main .content-container .wrapper .main-content .groom .box .text p:nth-child(1) {
-    font-size: 30px;
-  }
-  main .content-container .wrapper .main-content .groom .box .text p:nth-child(2), main .content-container .wrapper .main-content .groom .box .text p:nth-child(3), main .content-container .wrapper .main-content .groom .box .text p:nth-child(4) {
-    font-size: 14px;
-  }
   main .content-container .wrapper .main-content .groom-social {
     position: unset;
     right: unset;
@@ -302,12 +296,6 @@ main .content-container .wrapper .main-content .bride-social i {
   }
   main .content-container .wrapper .main-content .groom-social i {
     padding: 0 5px;
-  }
-  main .content-container .wrapper .main-content .bride .box .text p:nth-child(1) {
-    font-size: 30px;
-  }
-  main .content-container .wrapper .main-content .bride .box .text p:nth-child(2), main .content-container .wrapper .main-content .bride .box .text p:nth-child(3), main .content-container .wrapper .main-content .bride .box .text p:nth-child(4) {
-    font-size: 14px;
   }
   main .content-container .wrapper .main-content .bride-social {
     position: unset;

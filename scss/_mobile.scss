@@ -21,14 +21,12 @@ and (orientation : portrait)  {
 
                 .text-top {
                     
-
                     h1 {
                         font-size: 30px;
                     }
                 }
                 .save-date {
                     
-
                     img {
                         width: 200px;
                     }
@@ -39,7 +37,6 @@ and (orientation : portrait)  {
                 
                 .invitation {
                     
-
                     p {
                         font-size: 14px;
 
@@ -50,7 +47,6 @@ and (orientation : portrait)  {
                             font-size: 14px;
                         }
                     }
-
                     .invitation-btn {
 
                         button {
@@ -71,10 +67,8 @@ and (orientation : portrait)  {
         
             .wrapper {
 
-        
                 .text-top {
                     
-
                     h1 {
                         font-size: 40px;
                     }
@@ -84,36 +78,7 @@ and (orientation : portrait)  {
                     justify-content: center;
                     align-items: center;
                     flex-flow: column wrap;
-        
-                    .groom {
-                        
-                        
-                        .box {
-                            
-        
-                            img {
-                                
-                            }
-                            .text {
-                                
-            
-                                p {
-                                    
-            
-                                    &:nth-child(1) {
-                                        
-                                        font-size: 30px;
-                                    }
-                                    &:nth-child(2),
-                                    &:nth-child(3),
-                                    &:nth-child(4) {
-                                        
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                        }
-                    }
+   
                     .groom-social {
                         position: unset;
                         right: unset;
@@ -128,36 +93,6 @@ and (orientation : portrait)  {
                         }
                         i {
                             padding: 0 5px;
-                        }
-                    }
-        
-                    .bride {
-                        
-                        
-                        .box {
-                            
-        
-                            img {
-                                
-                            }
-                            .text {
-                                
-            
-                                p {
-                                    
-            
-                                    &:nth-child(1) {
-                                        
-                                        font-size: 30px;
-                                    }
-                                    &:nth-child(2),
-                                    &:nth-child(3),
-                                    &:nth-child(4) {
-                                        
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
                         }
                     }
                     .bride-social {
