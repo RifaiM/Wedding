@@ -178,6 +178,7 @@ main .content-container .wrapper .main-content .groom-social a:hover {
 }
 main .content-container .wrapper .main-content .groom-social i {
   padding: 0 5px;
+  font-size: 18px;
 }
 main .content-container .wrapper .main-content .bride {
   justify-self: start;
@@ -234,6 +235,7 @@ main .content-container .wrapper .main-content .bride-social a:hover {
 }
 main .content-container .wrapper .main-content .bride-social i {
   padding: 0 5px;
+  font-size: 18px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -282,10 +284,10 @@ main .content-container .wrapper .main-content .bride-social i {
     flex-flow: column wrap;
   }
   main .content-container .wrapper .main-content .groom .box .text p:nth-child(1) {
-    font-size: 28px;
+    font-size: 30px;
   }
   main .content-container .wrapper .main-content .groom .box .text p:nth-child(2), main .content-container .wrapper .main-content .groom .box .text p:nth-child(3), main .content-container .wrapper .main-content .groom .box .text p:nth-child(4) {
-    font-size: 12px;
+    font-size: 14px;
   }
   main .content-container .wrapper .main-content .groom-social {
     position: unset;
@@ -302,10 +304,10 @@ main .content-container .wrapper .main-content .bride-social i {
     padding: 0 5px;
   }
   main .content-container .wrapper .main-content .bride .box .text p:nth-child(1) {
-    font-size: 28px;
+    font-size: 30px;
   }
   main .content-container .wrapper .main-content .bride .box .text p:nth-child(2), main .content-container .wrapper .main-content .bride .box .text p:nth-child(3), main .content-container .wrapper .main-content .bride .box .text p:nth-child(4) {
-    font-size: 12px;
+    font-size: 14px;
   }
   main .content-container .wrapper .main-content .bride-social {
     position: unset;
