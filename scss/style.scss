@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -122,141 +123,165 @@ header {
 
 /* MAIN */
 
-.content-container {
-    display: none;
-
-    .wrapper {
-        padding: 5px;
-
-        .text-top {
+main {
+    .content-container {
+        display: none;
+    
+        .wrapper {
             padding: 5px;
-            margin: 5px;
-            display: flex;
-            justify-content: center;
-            font-family: config.$font-primary;
-        }
-        .main-content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 5px;
-            margin: 5px;
-            gap: 50px;
+    
+            .text-top {
+                padding: 5px;
+                margin: 50px 5px 25px 5px;
+                display: flex;
+                justify-content: center;
+                font-family: config.$font-primary;
 
-            .groom {
-                justify-self: end;
-                grid-area: 1 / 1;
-                position: relative;
-                
-                .box {
-                    display: grid;
-                    align-items: center;
-
-                    img {
-                        width: 250px;
+                h1 {
+                    margin: 5px;
+                    padding: 5px;
+                }
+            }
+            .main-content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 5px;
+                margin: 25px 5px 50px 5px;
+                gap: 50px;
+    
+                .groom {
+                    justify-self: end;
+                    grid-area: 1 / 1;
+                    position: relative;
+                    
+                    .box {
+                        display: grid;
                         align-items: center;
-                    }
-                    .text {
-                        position: absolute;
-                        background-color: map-get(config.$color, "background");
-                        bottom: -40px;
-                        left: 50%;
-                        border-top-left-radius: 25px;
-                        border-top-right-radius: 25px;
-                        border-bottom: 2px solid map-get(config.$color, "secondary");
-                        transform: translateX(-50%); 
-                        text-align: center;
-                        white-space: nowrap;
-                        opacity: 0.9;
     
-                        p {
-                            margin: 5px;
-                            padding: 5px;
-                            color: map-get(config.$color, "primary");
-    
-                            &:nth-child(1) {
-                                font-family: config.$font-primary;
-                                font-size: 30px;
-                            }
-                            &:nth-child(2),
-                            &:nth-child(3),
-                            &:nth-child(4) {
-                                color: map-get(config.$color, "secondary");
-                                font-size: 14px;
+                        img {
+                            width: 250px;
+                            align-items: center;
+                        }
+                        .text {
+                            position: absolute;
+                            background-color: map-get(config.$color, "background");
+                            bottom: -40px;
+                            left: 50%;
+                            border-top-left-radius: 25px;
+                            border-top-right-radius: 25px;
+                            border-bottom: 2px solid map-get(config.$color, "secondary");
+                            transform: translateX(-50%); 
+                            text-align: center;
+                            white-space: nowrap;
+                            opacity: 0.9;
+        
+                            p {
+                                margin: 5px;
+                                padding: 5px;
+                                color: map-get(config.$color, "primary");
+        
+                                &:nth-child(1) {
+                                    font-family: config.$font-primary;
+                                    font-size: 30px;
+                                }
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4) {
+                                    color: map-get(config.$color, "secondary");
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .groom-social {
-                justify-self: end;
-                position: relative;
-                right: 70px;
-                margin: 5px;
-                padding: 5px;
+                .groom-social {
+                    justify-self: end;
+                    position: relative;
+                    right: 70px;
+                    margin: 5px;
+                    padding: 5px;
 
-                i {
-                    padding: 0 5px;
-                }
-            }
+                    a {
+                        color: map-get(config.$color, "primary");
+                        text-decoration: none;
 
-            .bride {
-                justify-self: start;
-                position: relative;
-                grid-area: 1 / 2;
-                
-                .box {
-                    display: grid;
-                    align-items: center;
-
-                    img {
-                        width: 250px;
-                        align-items: center;
+                        &:hover {
+                            color: map-get(config.$color, "secondary");
+                        }
                     }
-                    .text {
-                        position: absolute;
-                        background-color: map-get(config.$color, "background");
-                        bottom: -40px;
-                        left: 50%;
-                        border-top-left-radius: 25px;
-                        border-top-right-radius: 25px;
-                        border-bottom: 2px solid map-get(config.$color, "secondary");
-                        transform: translateX(-50%); 
-                        text-align: center;
-                        white-space: nowrap;
-                        opacity: 0.9;
+                    i {
+                        padding: 0 5px;
+                    }
+                }
     
-                        p {
-                            margin: 5px;
-                            padding: 5px;
-                            color: map-get(config.$color, "primary");
+                .bride {
+                    justify-self: start;
+                    position: relative;
+                    grid-area: 1 / 2;
+                    
+                    .box {
+                        display: grid;
+                        align-items: center;
     
-                            &:nth-child(1) {
-                                font-family: config.$font-primary;
-                                font-size: 30px;
-                            }
-                            &:nth-child(2),
-                            &:nth-child(3),
-                            &:nth-child(4) {
-                                color: map-get(config.$color, "secondary");
-                                font-size: 14px;
+                        img {
+                            width: 250px;
+                            align-items: center;
+                        }
+                        .text {
+                            position: absolute;
+                            background-color: map-get(config.$color, "background");
+                            bottom: -40px;
+                            left: 50%;
+                            border-top-left-radius: 25px;
+                            border-top-right-radius: 25px;
+                            border-bottom: 2px solid map-get(config.$color, "secondary");
+                            transform: translateX(-50%); 
+                            text-align: center;
+                            white-space: nowrap;
+                            opacity: 0.9;
+        
+                            p {
+                                margin: 5px;
+                                padding: 5px;
+                                color: map-get(config.$color, "primary");
+        
+                                &:nth-child(1) {
+                                    font-family: config.$font-primary;
+                                    font-size: 30px;
+                                }
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4) {
+                                    color: map-get(config.$color, "secondary");
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .bride-social {
-                justify-self: start;
-                position: relative;
-                left: 70px;
-                margin: 5px;
-                padding: 5px;
+                .bride-social {
+                    justify-self: start;
+                    position: relative;
+                    left: 70px;
+                    margin: 5px;
+                    padding: 5px;
 
-                i {
-                    padding: 0 5px;
+                    a {
+                        color: map-get(config.$color, "primary");
+                        text-decoration: none;
+
+                        &:hover {
+                            color: map-get(config.$color, "secondary");
+                        }
+                    }
+                    i {
+                        padding: 0 5px;
+                    }
                 }
             }
         }
     }
 }
+
 
 @import './mobile';

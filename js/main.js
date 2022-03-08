@@ -3,7 +3,7 @@
 function myFunction() {
     document.getElementById("main").style.display = "block";
     document.getElementById("main").scrollIntoView({ behavior: "smooth" });
-    //document.activeElement.blur(); //optional if you want to blur active element.
+    document.activeElement.blur(); //optional if you want to blur active element.
 }
 
 
