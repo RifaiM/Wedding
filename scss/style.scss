@@ -285,6 +285,35 @@ main {
         }
 
         /* QUOTES SECTION */
+
+        .quotes-container {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/quotes_section.webp);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+
+            .content {
+                position: absolute;
+                color: white;
+                height: 100vh;
+                width: auto;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                text-align: center;
+                padding: 5px;
+
+                .text {
+                    margin: 0 50px;
+                    font-family: config.$font-secondary;
+                    font-size: 24px;
+                }
+            }
+        }
+
     }
 }
 
