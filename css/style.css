@@ -254,26 +254,30 @@ main .content-container .quotes-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/quotes_section.webp);
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
+  padding: 5px;
 }
 main .content-container .quotes-container .content {
-  position: absolute;
   color: white;
-  height: 100vh;
-  width: auto;
   display: grid;
   align-content: center;
   justify-content: center;
   text-align: center;
+  height: 50vh;
+  font-family: "Dosis", sans-serif;
+  margin: 5px;
   padding: 5px;
 }
 main .content-container .quotes-container .content .text {
-  margin: 0 50px;
-  font-family: "Dosis", sans-serif;
+  margin: 5px;
+  padding: 5px;
   font-size: 24px;
+}
+main .content-container .quotes-container .content span {
+  margin: 10px 5px;
+  padding: 5px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -407,7 +411,5 @@ main .content-container .quotes-container .content .text {
   .quotes-container .content .text {
     font-size: 14px !important;
     line-height: 30px;
-    margin: 20px;
-    padding: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
