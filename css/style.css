@@ -279,6 +279,43 @@ main .content-container .quotes-container .content span {
   margin: 10px 5px;
   padding: 5px;
 }
+main .content-container .countdown-container {
+  padding: 5px;
+}
+main .content-container .countdown-container .box {
+  height: 300px;
+  margin: 100px 50px;
+  padding: 5px;
+  border: 1px solid #181818;
+}
+main .content-container .countdown-container .box .inner {
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .content-container .countdown-container .box .title,
+main .content-container .countdown-container .box .text {
+  display: flex;
+  justify-content: center;
+}
+main .content-container .countdown-container .box .title span {
+  background-color: #fff;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  margin-top: -30px;
+}
+main .content-container .countdown-container .box .text span {
+  background-color: #fff;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: -27px;
+}
+main .content-container .countdown-container .box .timer {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 900px) and (orientation: portrait) {

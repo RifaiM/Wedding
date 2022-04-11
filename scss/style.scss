@@ -317,6 +317,60 @@ main {
             }
         }
 
+        .countdown-container {
+            padding: 5px;
+
+            @mixin span-bg-fonts {
+                background-color: map-get(config.$color, "background");
+                font-size: 24px;
+                font-family: config.$font-secondary;
+            }
+
+            .box {
+                height: 300px;
+                margin: 100px 50px;
+                padding: 5px;
+                border: 1px solid map-get(config.$color, "primary");
+
+                .inner {
+                    height: 100%;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                
+                .title,
+                .text {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .title {
+
+                    span {
+                        @include span-bg-fonts();
+                        margin-top: -30px;
+                    }
+                }
+                    
+                .text {
+
+                    span {
+                        @include span-bg-fonts();
+                        margin-bottom: -27px;
+                    }
+                }
+
+                .timer {
+                    text-align: center;
+                    font-family: config.$font-secondary;
+                }
+            }
+              
+            
+        }
+
     }
 }
 
