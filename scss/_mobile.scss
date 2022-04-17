@@ -124,6 +124,8 @@ and (orientation : portrait)  {
                     justify-content: center;
                     align-items: center;
                     flex-flow: column wrap;
+                    height: auto;
+
                     .text {
                         font-size: 14px;
                         line-height: 30px;
@@ -137,6 +139,10 @@ and (orientation : portrait)  {
 
             .countdown-container {
 
+                @mixin span-bg-fonts {
+                    font-size: 18px;
+                }
+
                 .box {
                     height: 250px;
                     margin: 100px 25px;
@@ -147,17 +153,73 @@ and (orientation : portrait)  {
                         padding: 5px;
 
                         #detail {
-                            font-size: 26px;
+                            font-size: 18px;
                             padding: 5px;
                         }
                         .detail-txt {
                             display: flex;
                             justify-content: space-evenly;
+                            
+                        }
+                    }
+                    .text {
+
+                        span {
+                            @include span-bg-fonts();
+                            margin-bottom: -25px;
                         }
                     }
                 }
                 
                 
+            }
+
+            /* WEDDING EVENTS */
+
+            .events-container {
+               
+    
+                .text-top {
+                    margin: 50px 5px;
+    
+                    h1 {
+                        
+                       font-size: 40px;
+                       white-space: nowrap;
+                    }
+                }
+                .content-desc {
+    
+                    .content-1,
+                    .content-2 {
+                        flex-flow: column wrap;
+                        align-items: flex-start;
+
+                        margin: unset;
+                        padding: unset;
+
+                        .img-1,
+                        .img-2 {
+                           align-self: center;
+                            
+    
+                            & img {
+                                width: 250px;
+                            }
+                        }
+    
+                        .txt {
+                            width: auto;
+    
+                            .location-btn {
+            
+                                button {
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -181,11 +243,9 @@ and (orientation : landscape) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-flow: row wrap;
                 gap: 10px;
 
                 .text-top {
-                    
 
                     h1 {
                         font-size: 30px;
@@ -239,6 +299,7 @@ and (orientation : landscape) {
             justify-content: center;
             align-items: center;
             flex-flow: column wrap;
+            height: auto !important;
 
             .text {
                 font-size: 14px !important;
@@ -271,8 +332,24 @@ and (orientation : landscape) {
                 }
             }
         }
-        
-        
+    }
+
+    /* WEDDING EVENTS */
+
+    .events-container {
+               
+        .text-top {
+            margin: 40px 5px !important;
+        }
+
+        .content-desc {
+
+            .content-1,
+            .content-2 {
+                flex-flow: column wrap;
+                align-items: flex-start;
+            }
+        }
     }
     
 }

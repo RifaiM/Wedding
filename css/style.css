@@ -13,9 +13,10 @@ body {
 /* HEADER */
 header .banner-container .wrapper {
   color: #fff;
-  background-image: url(../img/image.webp);
+  background: url(../img/image.webp);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100vh;
+  background-size: cover;
   padding: 5px;
   height: 100vh;
   display: -ms-grid;
@@ -111,13 +112,14 @@ main .content-container {
   /* Groom & Bride Social*/
   /* QUOTES SECTION */
   /* COUNTDOWN CONTAINER */
+  /* WEDDING EVENTS */
 }
 main .content-container .wrapper {
   padding: 5px;
 }
 main .content-container .wrapper .text-top {
   padding: 5px;
-  margin: 50px 5px 25px 5px;
+  margin: 100px 5px;
   display: flex;
   justify-content: center;
   font-family: "Great Vibes", cursive;
@@ -132,7 +134,7 @@ main .content-container .wrapper .main-content {
   -ms-grid-column: 1fr 1fr;
   grid-template-columns: repeat(2, 1fr);
   padding: 5px;
-  margin: 25px 5px 50px 5px;
+  margin: 50px 5px;
   gap: 50px;
 }
 main .content-container .wrapper .main-content .groom {
@@ -161,6 +163,7 @@ main .content-container .wrapper .main-content .groom .box .text {
   text-align: center;
   white-space: nowrap;
   opacity: 0.9;
+  font-family: "Dosis", sans-serif;
 }
 main .content-container .wrapper .main-content .groom .box .text p {
   color: #181818;
@@ -219,6 +222,7 @@ main .content-container .wrapper .main-content .bride .box .text {
   text-align: center;
   white-space: nowrap;
   opacity: 0.9;
+  font-family: "Dosis", sans-serif;
 }
 main .content-container .wrapper .main-content .bride .box .text p {
   color: #181818;
@@ -282,6 +286,7 @@ main .content-container .quotes-container .content span {
 }
 main .content-container .countdown-container {
   padding: 5px;
+  background-color: #fafafa;
 }
 main .content-container .countdown-container .box {
   height: 300px;
@@ -302,13 +307,13 @@ main .content-container .countdown-container .box .text {
   justify-content: center;
 }
 main .content-container .countdown-container .box .title span {
-  background-color: #fff;
+  background-color: #fafafa;
   font-size: 24px;
   font-family: "Dosis", sans-serif;
   margin-top: -30px;
 }
 main .content-container .countdown-container .box .text span {
-  background-color: #fff;
+  background-color: #fafafa;
   font-size: 24px;
   font-family: "Dosis", sans-serif;
   margin-bottom: -27px;
@@ -339,6 +344,90 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
 }
 main .content-container .countdown-container .box .timer .detail-txt span:nth-child(4) {
   grid-area: 1/14/span 1/span 2;
+}
+main .content-container .events-container {
+  padding: 5px;
+}
+main .content-container .events-container .text-top {
+  padding: 5px;
+  margin: 100px 5px;
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+}
+main .content-container .events-container .text-top h1 {
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .events-container .content-desc .content-1,
+main .content-container .events-container .content-desc .content-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .events-container .content-desc .content-1 .img-1,
+main .content-container .events-container .content-desc .content-1 .img-2,
+main .content-container .events-container .content-desc .content-2 .img-1,
+main .content-container .events-container .content-desc .content-2 .img-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .events-container .content-desc .content-1 .img-1 img,
+main .content-container .events-container .content-desc .content-1 .img-2 img,
+main .content-container .events-container .content-desc .content-2 .img-1 img,
+main .content-container .events-container .content-desc .content-2 .img-2 img {
+  width: 500px;
+}
+main .content-container .events-container .content-desc .content-1 .txt,
+main .content-container .events-container .content-desc .content-2 .txt {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 500px;
+}
+main .content-container .events-container .content-desc .content-1 .txt p,
+main .content-container .events-container .content-desc .content-2 .txt p {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Dosis", sans-serif;
+}
+main .content-container .events-container .content-desc .content-1 .txt p:nth-child(1),
+main .content-container .events-container .content-desc .content-2 .txt p:nth-child(1) {
+  font-size: 28px;
+  text-decoration: underline;
+}
+main .content-container .events-container .content-desc .content-1 .txt .location-btn,
+main .content-container .events-container .content-desc .content-2 .txt .location-btn {
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .events-container .content-desc .content-1 .txt .location-btn button,
+main .content-container .events-container .content-desc .content-2 .txt .location-btn button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #181818;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .content-container .events-container .content-desc .content-1 .txt .location-btn button:hover,
+main .content-container .events-container .content-desc .content-2 .txt .location-btn button:hover {
+  background-color: #71717A;
+}
+main .content-container .events-container .content-desc .content-1 .txt .location-btn button i,
+main .content-container .events-container .content-desc .content-2 .txt .location-btn button i {
+  padding: 0 5px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -378,6 +467,7 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
     display: none;
     /* QUOTES SECTION */
     /* COUNTDOWN CONTAINER */
+    /* WEDDING EVENTS */
   }
   main .content-container .wrapper .text-top h1 {
     font-size: 40px;
@@ -421,6 +511,7 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    height: auto;
   }
   main .content-container .quotes-container .content .text {
     font-size: 14px;
@@ -438,12 +529,50 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
     padding: 5px;
   }
   main .content-container .countdown-container .box .timer #detail {
-    font-size: 26px;
+    font-size: 18px;
     padding: 5px;
   }
   main .content-container .countdown-container .box .timer .detail-txt {
     display: flex;
     justify-content: space-evenly;
+  }
+  main .content-container .countdown-container .box .text span {
+    font-size: 18px;
+    margin-bottom: -25px;
+  }
+  main .content-container .events-container .text-top {
+    margin: 50px 5px;
+  }
+  main .content-container .events-container .text-top h1 {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  main .content-container .events-container .content-desc .content-1,
+main .content-container .events-container .content-desc .content-2 {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin: unset;
+    padding: unset;
+  }
+  main .content-container .events-container .content-desc .content-1 .img-1,
+main .content-container .events-container .content-desc .content-1 .img-2,
+main .content-container .events-container .content-desc .content-2 .img-1,
+main .content-container .events-container .content-desc .content-2 .img-2 {
+    align-self: center;
+  }
+  main .content-container .events-container .content-desc .content-1 .img-1 img,
+main .content-container .events-container .content-desc .content-1 .img-2 img,
+main .content-container .events-container .content-desc .content-2 .img-1 img,
+main .content-container .events-container .content-desc .content-2 .img-2 img {
+    width: 250px;
+  }
+  main .content-container .events-container .content-desc .content-1 .txt,
+main .content-container .events-container .content-desc .content-2 .txt {
+    width: auto;
+  }
+  main .content-container .events-container .content-desc .content-1 .txt .location-btn button,
+main .content-container .events-container .content-desc .content-2 .txt .location-btn button {
+    padding: 5px;
   }
 }
 /* Smartphones (landscape) ----------- */
@@ -454,7 +583,6 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
     gap: 10px;
   }
   header .banner-container .wrapper .text-top h1 {
@@ -486,6 +614,7 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    height: auto !important;
   }
   .quotes-container .content .text {
     font-size: 14px !important;
@@ -509,5 +638,15 @@ main .content-container .countdown-container .box .timer .detail-txt span:nth-ch
   .countdown-container .box .timer .detail-txt {
     display: flex !important;
     justify-content: space-evenly !important;
+  }
+
+  /* WEDDING EVENTS */
+  .events-container .text-top {
+    margin: 40px 5px !important;
+  }
+  .events-container .content-desc .content-1,
+.events-container .content-desc .content-2 {
+    flex-flow: column wrap;
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */
