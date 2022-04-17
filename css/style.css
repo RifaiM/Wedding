@@ -110,6 +110,7 @@ main .content-container {
   /* Image size for Groom & Bride */
   /* Groom & Bride Social*/
   /* QUOTES SECTION */
+  /* COUNTDOWN CONTAINER */
 }
 main .content-container .wrapper {
   padding: 5px;
@@ -283,8 +284,8 @@ main .content-container .countdown-container {
   padding: 5px;
 }
 main .content-container .countdown-container .box {
-  height: 300px;
-  margin: 100px 50px;
+  height: 250px;
+  margin: 50px 50px;
   padding: 5px;
   border: 1px solid #181818;
 }
@@ -315,6 +316,17 @@ main .content-container .countdown-container .box .text span {
 main .content-container .countdown-container .box .timer {
   text-align: center;
   font-family: "Dosis", sans-serif;
+  padding: 5px;
+}
+main .content-container .countdown-container .box .timer #detail {
+  font-size: 24px;
+  padding: 5px;
+}
+main .content-container .countdown-container .box .timer .detail-txt {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  font-size: 10px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -448,5 +460,34 @@ main .content-container .countdown-container .box .timer {
   .quotes-container .content .text {
     font-size: 14px !important;
     line-height: 30px;
+  }
+
+  /* COUNTDOWN CONTAINER */
+  .countdown-container .box .timer {
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    padding: 5px;
+  }
+  .countdown-container .box .timer #detail {
+    font-size: 20px !important;
+    padding: 5px;
+  }
+  .countdown-container .box .timer .detail-txt {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(19, 1fr);
+    padding: 5px;
+  }
+  .countdown-container .box .timer .detail-txt span:nth-child(1) {
+    grid-area: 1/5/span 1/span 2;
+  }
+  .countdown-container .box .timer .detail-txt span:nth-child(2) {
+    grid-area: 1/8/span 1/span 2;
+  }
+  .countdown-container .box .timer .detail-txt span:nth-child(3) {
+    grid-area: 1/11/span 1/span 2;
+  }
+  .countdown-container .box .timer .detail-txt span:nth-child(4) {
+    grid-area: 1/14/span 1/span 2;
   }
 }/*# sourceMappingURL=style.css.map */

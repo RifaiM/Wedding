@@ -317,6 +317,8 @@ main {
             }
         }
 
+        /* COUNTDOWN CONTAINER */
+
         .countdown-container {
             padding: 5px;
 
@@ -327,8 +329,8 @@ main {
             }
 
             .box {
-                height: 300px;
-                margin: 100px 50px;
+                height: 250px;
+                margin: 50px 50px;
                 padding: 5px;
                 border: 1px solid map-get(config.$color, "primary");
 
@@ -365,6 +367,20 @@ main {
                 .timer {
                     text-align: center;
                     font-family: config.$font-secondary;
+                    padding: 5px;
+
+                    #detail {
+                        font-size: 24px;
+                        padding: 5px;
+                    }
+                    .detail-txt {
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        padding: 5px;
+                        font-size: 10px;
+                        
+                    }
                 }
             }
               
