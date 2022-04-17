@@ -132,6 +132,33 @@ and (orientation : portrait)  {
                     }
                 }
             }
+
+            /* COUNTDOWN CONTAINER */
+
+            .countdown-container {
+
+                .box {
+                    height: 250px;
+                    margin: 100px 25px;
+
+                    .timer {
+                        text-align: center;
+                        font-family: config.$font-secondary;
+                        padding: 5px;
+
+                        #detail {
+                            font-size: 26px;
+                            padding: 5px;
+                        }
+                        .detail-txt {
+                            display: flex;
+                            justify-content: space-evenly;
+                        }
+                    }
+                }
+                
+                
+            }
         }
     }
 }
@@ -226,6 +253,8 @@ and (orientation : landscape) {
     .countdown-container {
 
         .box {
+            height: 250px;
+            margin: 100px 25px;
 
             .timer {
                 text-align: center;
@@ -233,34 +262,17 @@ and (orientation : landscape) {
                 padding: 5px;
 
                 #detail {
-                    font-size: 20px !important;
+                    font-size: 50px !important;
                     padding: 5px;
                 }
                 .detail-txt {
-                    display: grid;
-                    justify-content: center;
-                    grid-template-columns: repeat(19, 1fr);
-
-                    padding: 5px;
-
-                    span:nth-child(1) {
-                        grid-area: 1 / 5 / span 1 / span 2;
-                    }
-                    span:nth-child(2) {
-                        grid-area: 1 / 8 / span 1 / span 2;
-                    }
-                    span:nth-child(3) {
-                        grid-area: 1 / 11 / span 1 / span 2;
-                    }
-                    span:nth-child(4) {
-                        grid-area: 1 / 14 / span 1 / span 2;
-                    }
+                    display: flex !important;
+                    justify-content: space-evenly !important;
                 }
             }
         }
-          
+        
         
     }
-    
     
 }
