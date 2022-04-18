@@ -114,6 +114,7 @@ main .content-container {
   /* COUNTDOWN CONTAINER */
   /* WEDDING EVENTS */
   /* GALLERY */
+  /* DONATE */
 }
 main .content-container .wrapper {
   padding: 5px;
@@ -467,6 +468,58 @@ main .content-container .gallery-container .img-wrapper img {
      object-fit: cover;
   border-radius: 2px;
 }
+main .content-container .donate-container {
+  margin: 100px 0px;
+}
+main .content-container .donate-container .top-shape {
+  background-color: black;
+  height: 50px;
+  -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
+  clip-path: polygon(0 0, 0 50%, 100% 0);
+  margin-bottom: 50px;
+}
+main .content-container .donate-container .text-top {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+}
+main .content-container .donate-container .text-top h1 {
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .donate-container .donate-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .donate-container .donate-btn button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #181818;
+  font-family: "Dosis", sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .content-container .donate-container .donate-btn button:hover {
+  background-color: #71717A;
+}
+main .content-container .donate-container .donate-btn button i {
+  padding: 0 5px;
+}
+main .content-container .donate-container .bottom-shape {
+  background-color: black;
+  height: 50px;
+  -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
+  clip-path: polygon(0 0, 0 50%, 100% 0);
+  transform: rotate(180deg);
+  margin-top: 50px;
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 900px) and (orientation: portrait) {
@@ -508,6 +561,7 @@ main .content-container .gallery-container .img-wrapper img {
     /* COUNTDOWN CONTAINER */
     /* WEDDING EVENTS */
     /* GALLERY */
+    /* DONATE */
   }
   main .content-container .wrapper .text-top h1 {
     font-size: 40px;
@@ -622,6 +676,23 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   }
   main .content-container .gallery-container .img-wrapper .img-8 {
     grid-column: 1/span 2;
+  }
+  main .content-container .donate-container .top-shape {
+    margin-bottom: 25px;
+  }
+  main .content-container .donate-container .text-top h1 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 40px;
+  }
+  main .content-container .donate-container .donate-btn button {
+    padding: 5px;
+  }
+  main .content-container .donate-container .donate-btn button i {
+    padding: 5px;
+  }
+  main .content-container .donate-container .bottom-shape {
+    margin-top: 25px;
   }
 }
 /* Smartphones (landscape) ----------- */

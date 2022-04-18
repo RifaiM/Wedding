@@ -242,6 +242,38 @@ and (orientation : portrait)  {
                     }
                 }
             }
+
+            /* DONATE */
+
+            .donate-container {
+
+                .top-shape {
+                    margin-bottom: 25px;
+                }
+
+                .text-top {
+
+                    h1 {
+                        @include margin-padding-5px();
+                        font-size: 40px;
+                    }
+                }
+
+                .donate-btn {
+
+                    button {
+                        padding: 5px;
+
+                        i {
+                            padding: 5px;
+                        }
+                    }
+                }
+
+                .bottom-shape {
+                    margin-top: 25px;
+                }
+            }
         }
     }
 }
