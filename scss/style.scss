@@ -17,6 +17,31 @@ body {
     padding: 5px;
 }
 
+@mixin btn-style {
+    font-size: 14px;
+
+    @include margin-padding-5px();
+
+    button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px;
+        color: map-get(config.$color, "background");
+        background-color: map-get(config.$color, "primary");
+        font-family: config.$font-secondary;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: map-get(config.$color, "secondary");
+        }
+        i {
+            padding: 0 5px;
+        }
+    }
+}
+
 /* HEADER */
 
 header {
@@ -102,30 +127,8 @@ header {
                 }
 
                 .invitation-btn {
-                    font-size: 14px;
-
-                    @include margin-padding-5px();
-
-                    button {
-                        display: inline-flex;
-                        align-items: center;
-                        padding: 10px;
-                        color: map-get(config.$color, "background");
-                        background-color: map-get(config.$color, "primary");
-                        font-family: config.$font-secondary;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: map-get(config.$color, "secondary");
-                        }
-                        i {
-                            padding: 0 5px;
-                        }
-                    }
-
-
+                    
+                    @include btn-style();
                 }
             }
             
@@ -463,28 +466,8 @@ main {
                         }
 
                         .location-btn {
-                            font-size: 14px;
-        
-                            @include margin-padding-5px();
-        
-                            button {
-                                display: inline-flex;
-                                align-items: center;
-                                padding: 10px;
-                                color: map-get(config.$color, "background");
-                                background-color: map-get(config.$color, "primary");
-                                font-family: config.$font-secondary;
-                                border: none;
-                                border-radius: 5px;
-                                cursor: pointer;
-        
-                                &:hover {
-                                    background-color: map-get(config.$color, "secondary");
-                                }
-                                i {
-                                    padding: 0 5px;
-                                }
-                            }
+                            
+                            @include btn-style();
                         }
                     }
                 }
@@ -536,11 +519,18 @@ main {
         .donate-container {
             margin: 100px 0px;
 
-            .top-shape {
-                background-color: black;
+            /* Black Shapes */
+
+            @mixin black-shapes {
+                background-color: map-get(config.$color, "primary");
                 height: 50px;
                 -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
                 clip-path: polygon(0 0, 0 50%, 100% 0);
+            }
+
+            .top-shape {
+                @include black-shapes();
+
                 margin-bottom: 50px;
             }
 
@@ -558,37 +548,83 @@ main {
             .donate-btn {
                 display: flex;
                 justify-content: center;
-                font-size: 14px;
+                
+                @include btn-style();
+            }
 
+            .bottom-shape {
+                @include black-shapes();
+
+                transform: rotate(180deg);
+                margin-top: 50px;
+            }
+        }
+
+        /* HEALTH PROTOCOL */
+
+        .health-container {
+            padding: 5px;
+            font-family: config.$font-secondary;
+            background-color: map-get(config.$color, "background2");
+
+            .txt {
                 @include margin-padding-5px();
 
-                button {
-                    display: inline-flex;
-                    align-items: center;
-                    padding: 10px;
-                    color: map-get(config.$color, "background");
-                    background-color: map-get(config.$color, "primary");
-                    font-family: config.$font-secondary;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                gap: 10px;
 
-                    &:hover {
-                        background-color: map-get(config.$color, "secondary");
+                .top {
+                    p {
+                        font-size: 24px;
+                        @include margin-padding-5px();
+
+                        &:nth-child(2) {
+                            font-weight: bold;
+                        }
                     }
-                    i {
-                        padding: 0 5px;
+                }
+
+                .bottom {
+                    p {
+                        font-size: 50px;
+                        font-weight: bold;
+                        @include margin-padding-5px();
                     }
                 }
             }
 
-            .bottom-shape {
-                background-color: black;
-                height: 50px;
-                -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
-                clip-path: polygon(0 0, 0 50%, 100% 0);
-                transform: rotate(180deg);
-                margin-top: 50px;
+            .icon-wrapper {
+                margin: 50px;
+                padding: 5px;
+                border-radius: 2px;
+                background-color: map-get(config.$color, "background");
+                
+                display: flex;
+                justify-content: space-evenly;
+
+                .icon-1,
+                .icon-2,
+                .icon-3,
+                .icon-4,
+                .icon-5 {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    p {
+                        text-align: center;
+                        @include margin-padding-5px();
+                    }
+                    
+                }
             }
         }
 

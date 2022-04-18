@@ -115,6 +115,7 @@ main .content-container {
   /* WEDDING EVENTS */
   /* GALLERY */
   /* DONATE */
+  /* HEALTH PROTOCOL */
 }
 main .content-container .wrapper {
   padding: 5px;
@@ -470,9 +471,10 @@ main .content-container .gallery-container .img-wrapper img {
 }
 main .content-container .donate-container {
   margin: 100px 0px;
+  /* Black Shapes */
 }
 main .content-container .donate-container .top-shape {
-  background-color: black;
+  background-color: #181818;
   height: 50px;
   -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
   clip-path: polygon(0 0, 0 50%, 100% 0);
@@ -513,12 +515,74 @@ main .content-container .donate-container .donate-btn button i {
   padding: 0 5px;
 }
 main .content-container .donate-container .bottom-shape {
-  background-color: black;
+  background-color: #181818;
   height: 50px;
   -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
   clip-path: polygon(0 0, 0 50%, 100% 0);
   transform: rotate(180deg);
   margin-top: 50px;
+}
+main .content-container .health-container {
+  padding: 5px;
+  font-family: "Dosis", sans-serif;
+  background-color: #fafafa;
+}
+main .content-container .health-container .txt {
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+main .content-container .health-container .txt .top p {
+  font-size: 24px;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .health-container .txt .top p:nth-child(2) {
+  font-weight: bold;
+}
+main .content-container .health-container .txt .bottom p {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .health-container .icon-wrapper {
+  margin: 50px;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .content-container .health-container .icon-wrapper .icon-1,
+main .content-container .health-container .icon-wrapper .icon-2,
+main .content-container .health-container .icon-wrapper .icon-3,
+main .content-container .health-container .icon-wrapper .icon-4,
+main .content-container .health-container .icon-wrapper .icon-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .content-container .health-container .icon-wrapper .icon-1 img,
+main .content-container .health-container .icon-wrapper .icon-2 img,
+main .content-container .health-container .icon-wrapper .icon-3 img,
+main .content-container .health-container .icon-wrapper .icon-4 img,
+main .content-container .health-container .icon-wrapper .icon-5 img {
+  width: 100px;
+  height: 100px;
+}
+main .content-container .health-container .icon-wrapper .icon-1 p,
+main .content-container .health-container .icon-wrapper .icon-2 p,
+main .content-container .health-container .icon-wrapper .icon-3 p,
+main .content-container .health-container .icon-wrapper .icon-4 p,
+main .content-container .health-container .icon-wrapper .icon-5 p {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -562,6 +626,7 @@ main .content-container .donate-container .bottom-shape {
     /* WEDDING EVENTS */
     /* GALLERY */
     /* DONATE */
+    /* HEALTH PROTOCOL */
   }
   main .content-container .wrapper .text-top h1 {
     font-size: 40px;
@@ -688,11 +753,52 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   main .content-container .donate-container .donate-btn button {
     padding: 5px;
   }
-  main .content-container .donate-container .donate-btn button i {
-    padding: 5px;
-  }
   main .content-container .donate-container .bottom-shape {
     margin-top: 25px;
+  }
+  main .content-container .health-container {
+    padding: 5px;
+    font-family: "Dosis", sans-serif;
+    background-color: #fafafa;
+  }
+  main .content-container .health-container .txt {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  main .content-container .health-container .txt .top p {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+  }
+  main .content-container .health-container .txt .top p:nth-child(2) {
+    font-weight: bold;
+  }
+  main .content-container .health-container .txt .bottom p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+  }
+  main .content-container .health-container .icon-wrapper {
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  main .content-container .health-container .icon-wrapper .icon-5 {
+    grid-column: 1/span 2;
+  }
+  main .content-container .health-container .icon-wrapper .icon-1 img,
+main .content-container .health-container .icon-wrapper .icon-2 img,
+main .content-container .health-container .icon-wrapper .icon-3 img,
+main .content-container .health-container .icon-wrapper .icon-4 img,
+main .content-container .health-container .icon-wrapper .icon-5 img {
+    width: 50px;
+    height: 50px;
   }
 }
 /* Smartphones (landscape) ----------- */
@@ -767,4 +873,17 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   }
 
   /* GALLERY */
+  /* DONATE */
+  /* HEALTH PROTOCOL */
+  .health-container .icon-wrapper {
+    margin: 50px 5px !important;
+  }
+  .health-container .icon-wrapper .icon-1 img,
+.health-container .icon-wrapper .icon-2 img,
+.health-container .icon-wrapper .icon-3 img,
+.health-container .icon-wrapper .icon-4 img,
+.health-container .icon-wrapper .icon-5 img {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

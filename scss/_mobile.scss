@@ -263,15 +263,70 @@ and (orientation : portrait)  {
 
                     button {
                         padding: 5px;
-
-                        i {
-                            padding: 5px;
-                        }
                     }
                 }
 
                 .bottom-shape {
                     margin-top: 25px;
+                }
+            }
+
+            /* HEALTH PROTOCOL */
+
+            .health-container {
+                padding: 5px;
+                font-family: config.$font-secondary;
+                background-color: map-get(config.$color, "background2");
+
+                .txt {
+                    @include margin-padding-5px();
+
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 10px;
+
+                    .top {
+                        p {
+                            font-size: 20px;
+                            @include margin-padding-5px();
+
+                            &:nth-child(2) {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        p {
+                            font-size: 40px;
+                            font-weight: bold;
+                            @include margin-padding-5px();
+                        }
+                    }
+                }
+
+                .icon-wrapper {
+                    margin: 25px 0;        
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+
+                    .icon-5 {
+                        grid-column: 1 / span 2;
+                    }
+
+                    .icon-1,
+                    .icon-2,
+                    .icon-3,
+                    .icon-4,
+                    .icon-5 {
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }      
+                    }
                 }
             }
         }
@@ -399,6 +454,30 @@ and (orientation : landscape) {
     }
 
     /* GALLERY */
+
+    /* DONATE */
+
+    /* HEALTH PROTOCOL */
+
+    .health-container {
+
+        .icon-wrapper {
+            margin: 50px 5px !important;
+            
+            .icon-1,
+            .icon-2,
+            .icon-3,
+            .icon-4,
+            .icon-5 {
+
+                img {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+                
+            }
+        }
+    }
 
     
     
