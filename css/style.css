@@ -113,6 +113,7 @@ main .content-container {
   /* QUOTES SECTION */
   /* COUNTDOWN CONTAINER */
   /* WEDDING EVENTS */
+  /* GALLERY */
 }
 main .content-container .wrapper {
   padding: 5px;
@@ -150,6 +151,7 @@ main .content-container .wrapper .main-content .groom .box {
 main .content-container .wrapper .main-content .groom .box img {
   width: 250px;
   align-items: center;
+  border-radius: 2px;
 }
 main .content-container .wrapper .main-content .groom .box .text {
   position: absolute;
@@ -209,6 +211,7 @@ main .content-container .wrapper .main-content .bride .box {
 main .content-container .wrapper .main-content .bride .box img {
   width: 250px;
   align-items: center;
+  border-radius: 2px;
 }
 main .content-container .wrapper .main-content .bride .box .text {
   position: absolute;
@@ -384,6 +387,7 @@ main .content-container .events-container .content-desc .content-1 .img-2 img,
 main .content-container .events-container .content-desc .content-2 .img-1 img,
 main .content-container .events-container .content-desc .content-2 .img-2 img {
   width: 500px;
+  border-radius: 2px;
 }
 main .content-container .events-container .content-desc .content-1 .txt,
 main .content-container .events-container .content-desc .content-2 .txt {
@@ -429,6 +433,40 @@ main .content-container .events-container .content-desc .content-1 .txt .locatio
 main .content-container .events-container .content-desc .content-2 .txt .location-btn button i {
   padding: 0 5px;
 }
+main .content-container .gallery-container {
+  padding: 5px;
+  background-color: #fafafa;
+}
+main .content-container .gallery-container .text-top {
+  padding: 5px;
+  margin: 100px 5px;
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+}
+main .content-container .gallery-container .text-top h1 {
+  margin: 5px;
+  padding: 5px;
+}
+main .content-container .gallery-container .img-wrapper {
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+main .content-container .gallery-container .img-wrapper .img-4 {
+  grid-row: 2/span 2;
+}
+main .content-container .gallery-container .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width: 240px) and (max-device-width: 900px) and (orientation: portrait) {
@@ -468,6 +506,7 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
     /* QUOTES SECTION */
     /* COUNTDOWN CONTAINER */
     /* WEDDING EVENTS */
+    /* GALLERY */
   }
   main .content-container .wrapper .text-top h1 {
     font-size: 40px;
@@ -558,13 +597,16 @@ main .content-container .events-container .content-desc .content-2 {
 main .content-container .events-container .content-desc .content-1 .img-2,
 main .content-container .events-container .content-desc .content-2 .img-1,
 main .content-container .events-container .content-desc .content-2 .img-2 {
-    align-self: center;
+    align-self: flex-start;
   }
   main .content-container .events-container .content-desc .content-1 .img-1 img,
 main .content-container .events-container .content-desc .content-1 .img-2 img,
 main .content-container .events-container .content-desc .content-2 .img-1 img,
 main .content-container .events-container .content-desc .content-2 .img-2 img {
-    width: 250px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .content-container .events-container .content-desc .content-1 .txt,
 main .content-container .events-container .content-desc .content-2 .txt {
@@ -573,6 +615,18 @@ main .content-container .events-container .content-desc .content-2 .txt {
   main .content-container .events-container .content-desc .content-1 .txt .location-btn button,
 main .content-container .events-container .content-desc .content-2 .txt .location-btn button {
     padding: 5px;
+  }
+  main .content-container .gallery-container .text-top {
+    margin: 50px 5px;
+  }
+  main .content-container .gallery-container .text-top h1 {
+    font-size: 40px;
+  }
+  main .content-container .gallery-container .img-wrapper {
+    grid-template-columns: repeat(2, 3fr);
+  }
+  main .content-container .gallery-container .img-wrapper .img-8 {
+    grid-column: 1/span 2;
   }
 }
 /* Smartphones (landscape) ----------- */
@@ -641,12 +695,11 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   }
 
   /* WEDDING EVENTS */
-  .events-container .text-top {
-    margin: 40px 5px !important;
-  }
   .events-container .content-desc .content-1,
 .events-container .content-desc .content-2 {
     flex-flow: column wrap;
     align-items: flex-start;
   }
+
+  /* GALLERY */
 }/*# sourceMappingURL=style.css.map */
