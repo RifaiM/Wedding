@@ -298,13 +298,15 @@ main {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/quotes_section.webp);
             background-size: cover;
             background-position: center;
+            display: -ms-grid; 
             display: grid;
             align-content: center;
             justify-content: center;
             padding: 5px;
 
             .content {
-                color: white;
+                color: map-get(config.$color, "background");
+                display: -ms-grid; 
                 display: grid;
                 align-content: center;
                 justify-content: center;
@@ -383,6 +385,7 @@ main {
                         padding: 5px;
                     }
                     .detail-txt {
+                        display: -ms-grid; 
                         display: grid;
                         justify-content: center;
                         grid-template-columns: repeat(19, 1fr);
@@ -495,7 +498,9 @@ main {
             .img-wrapper {
                 @include margin-padding-5px();
 
+                display: -ms-grid; 
                 display: grid;
+                -ms-grid-column: 1fr 1fr 1fr;
                 grid-template-columns: repeat(3, 3fr);
                 gap: 10px;
                 align-items: center;
@@ -570,6 +575,7 @@ main {
             .txt {
                 @include margin-padding-5px();
 
+                display: -ms-grid; 
                 display: grid;
                 justify-content: center;
                 text-align: center;

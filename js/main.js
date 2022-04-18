@@ -2,7 +2,9 @@
 
 function myFunction() {
     document.getElementById("main").style.display = "block";
-    document.getElementById("main").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("main").scrollIntoView({
+       behavior: "smooth" 
+    });
     document.activeElement.blur(); //optional if you want to blur active element.
 }
 
@@ -34,13 +36,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
+  // Output the result in an element with id="detail"
   document.getElementById("detail").innerHTML = days + "&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;"
   + minutes + "&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;" + seconds + "";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("detail").innerHTML = "EXPIRED";
+    document.getElementById("detail").innerHTML = "EVENT ALREADY ENDED";
   }
 }, 1000);

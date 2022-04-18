@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #fff;
+  background-color: #FFF;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 
 /* HEADER */
 header .banner-container .wrapper {
-  color: #fff;
+  color: #FFF;
   background: url(../img/image.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header .banner-container .wrapper .invitation .invitation-btn button {
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  color: #fff;
+  color: #FFF;
   background-color: #181818;
   font-family: "Dosis", sans-serif;
   border: none;
@@ -157,7 +157,7 @@ main .content-container .wrapper .main-content .groom .box img {
 }
 main .content-container .wrapper .main-content .groom .box .text {
   position: absolute;
-  background-color: #fff;
+  background-color: #FFF;
   bottom: -40px;
   left: 50%;
   border-top-left-radius: 25px;
@@ -217,7 +217,7 @@ main .content-container .wrapper .main-content .bride .box img {
 }
 main .content-container .wrapper .main-content .bride .box .text {
   position: absolute;
-  background-color: #fff;
+  background-color: #FFF;
   bottom: -40px;
   left: 50%;
   border-top-left-radius: 25px;
@@ -264,13 +264,15 @@ main .content-container .quotes-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/quotes_section.webp);
   background-size: cover;
   background-position: center;
+  display: -ms-grid;
   display: grid;
   align-content: center;
   justify-content: center;
   padding: 5px;
 }
 main .content-container .quotes-container .content {
-  color: white;
+  color: #FFF;
+  display: -ms-grid;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -291,7 +293,7 @@ main .content-container .quotes-container .content span {
 }
 main .content-container .countdown-container {
   padding: 5px;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 main .content-container .countdown-container .box {
   height: 300px;
@@ -312,13 +314,13 @@ main .content-container .countdown-container .box .text {
   justify-content: center;
 }
 main .content-container .countdown-container .box .title span {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   font-size: 24px;
   font-family: "Dosis", sans-serif;
   margin-top: -30px;
 }
 main .content-container .countdown-container .box .text span {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   font-size: 24px;
   font-family: "Dosis", sans-serif;
   margin-bottom: -27px;
@@ -333,6 +335,7 @@ main .content-container .countdown-container .box .timer #detail {
   padding: 5px;
 }
 main .content-container .countdown-container .box .timer .detail-txt {
+  display: -ms-grid;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(19, 1fr);
@@ -420,7 +423,7 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  color: #fff;
+  color: #FFF;
   background-color: #181818;
   font-family: "Dosis", sans-serif;
   border: none;
@@ -437,7 +440,7 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
 }
 main .content-container .gallery-container {
   padding: 5px;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 main .content-container .gallery-container .text-top {
   padding: 5px;
@@ -453,7 +456,9 @@ main .content-container .gallery-container .text-top h1 {
 main .content-container .gallery-container .img-wrapper {
   margin: 5px;
   padding: 5px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-column: 1fr 1fr 1fr;
   grid-template-columns: repeat(3, 3fr);
   gap: 10px;
   align-items: center;
@@ -501,7 +506,7 @@ main .content-container .donate-container .donate-btn button {
   display: inline-flex;
   align-items: center;
   padding: 10px;
-  color: #fff;
+  color: #FFF;
   background-color: #181818;
   font-family: "Dosis", sans-serif;
   border: none;
@@ -525,11 +530,12 @@ main .content-container .donate-container .bottom-shape {
 main .content-container .health-container {
   padding: 5px;
   font-family: "Dosis", sans-serif;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 main .content-container .health-container .txt {
   margin: 5px;
   padding: 5px;
+  display: -ms-grid;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -553,7 +559,7 @@ main .content-container .health-container .icon-wrapper {
   margin: 50px;
   padding: 5px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #FFF;
   display: flex;
   justify-content: space-evenly;
 }
@@ -759,7 +765,7 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   main .content-container .health-container {
     padding: 5px;
     font-family: "Dosis", sans-serif;
-    background-color: #fafafa;
+    background-color: #FAFAFA;
   }
   main .content-container .health-container .txt {
     margin: 5px;
