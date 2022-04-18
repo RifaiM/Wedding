@@ -23,6 +23,7 @@ and (orientation : portrait)  {
                     
                     h1 {
                         font-size: 30px;
+                        white-space: nowrap;
                     }
                 }
                 .save-date {
@@ -178,7 +179,6 @@ and (orientation : portrait)  {
             .events-container {
                
                 .text-top {
-                    margin: 50px 5px;
     
                     h1 {
                         
@@ -227,7 +227,6 @@ and (orientation : portrait)  {
             .gallery-container {
 
                 .text-top {
-                    margin: 50px 5px;
 
                     h1 {
                         font-size: 40px;
@@ -335,7 +334,6 @@ and (orientation : landscape) {
 
         .box {
             height: 250px;
-            margin: 100px 25px;
 
             .timer {
                 text-align: center;

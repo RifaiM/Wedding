@@ -480,6 +480,7 @@ main .content-container .gallery-container .img-wrapper img {
   }
   header .banner-container .wrapper .text-top h1 {
     font-size: 30px;
+    white-space: nowrap;
   }
   header .banner-container .wrapper .save-date img {
     width: 200px;
@@ -579,9 +580,6 @@ main .content-container .gallery-container .img-wrapper img {
     font-size: 18px;
     margin-bottom: -25px;
   }
-  main .content-container .events-container .text-top {
-    margin: 50px 5px;
-  }
   main .content-container .events-container .text-top h1 {
     font-size: 40px;
     white-space: nowrap;
@@ -615,9 +613,6 @@ main .content-container .events-container .content-desc .content-2 .txt {
   main .content-container .events-container .content-desc .content-1 .txt .location-btn button,
 main .content-container .events-container .content-desc .content-2 .txt .location-btn button {
     padding: 5px;
-  }
-  main .content-container .gallery-container .text-top {
-    margin: 50px 5px;
   }
   main .content-container .gallery-container .text-top h1 {
     font-size: 40px;
@@ -678,7 +673,6 @@ main .content-container .events-container .content-desc .content-2 .txt .locatio
   /* COUNTDOWN CONTAINER */
   .countdown-container .box {
     height: 250px;
-    margin: 100px 25px;
   }
   .countdown-container .box .timer {
     text-align: center;
