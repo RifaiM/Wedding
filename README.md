@@ -1,1 +1,1 @@
-# Wedding
+# Wedding invitation
